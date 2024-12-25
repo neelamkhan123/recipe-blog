@@ -38,7 +38,8 @@
 
 .home {
   position: absolute;
-  left: 34%;
+  left: 50%;
+  transform: translateX(-50%);
   top: 60%;
   animation: slide-up 1s ease;
 }

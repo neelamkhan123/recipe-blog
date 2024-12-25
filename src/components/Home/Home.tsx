@@ -14,19 +14,4 @@ const Home = (): JSX.Element => {
   );
 };
 
-// const Home = (): JSX.Element => {
-//   return (
-//     <h1
-//       style={{
-//         display: "flex",
-//         justifyContent: "center",
-//         alignItems: "center",
-//         height: "100vh",
-//       }}
-//     >
-//       Testing Homepage
-//     </h1>
-//   );
-// };
-
 export default Home;
