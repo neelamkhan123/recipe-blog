@@ -120,7 +120,7 @@ const SearchBar = ({ className, width }: SearchBarProps): JSX.Element => {
       }
     };
     getPosts();
-  }, [query]);
+  }, [query, recipeInfo]);
 
   useEffect(() => {
     if (id !== null && id !== undefined) {
@@ -137,7 +137,7 @@ const SearchBar = ({ className, width }: SearchBarProps): JSX.Element => {
       };
       getRecipe();
     }
-  }, [id]);
+  }, [id, recipeInfo]);
 
   useEffect(() => {
     if (id !== null && id !== undefined) {
@@ -154,7 +154,7 @@ const SearchBar = ({ className, width }: SearchBarProps): JSX.Element => {
       };
       getInstructions();
     }
-  }, [id]);
+  }, [id, recipeInfo]);
 
   return (
     <form
