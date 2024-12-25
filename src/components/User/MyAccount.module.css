@@ -1,0 +1,128 @@
+.my-account {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+/* TOP CONTAINER */
+
+.my-account .top-container {
+  position: sticky;
+  top: 73px;
+  z-index: 2;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  background-color: white;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.top-container .image {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.top-container .user-info {
+  text-align: center;
+}
+
+.top-container .user-info .display-name {
+  font-size: 1.7rem;
+}
+
+.top-container .user-info .email {
+  font-weight: normal;
+  color: gray;
+}
+
+/* BOTTOM CONTAINER */
+
+.my-account .bottom-container {
+  height: auto;
+  position: absolute;
+  top: 405px;
+  right: 0;
+  left: 0;
+}
+
+.bottom-container .posts {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 0.2rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.bottom-container .posts .default-text {
+  position: absolute;
+  left: 40%;
+  font-weight: 500;
+}
+
+.bottom-container .posts .post {
+  height: 298px;
+  width: 298px;
+  position: relative;
+}
+
+.bottom-container .posts .post:hover .wrapper {
+  display: block;
+}
+
+.bottom-container .posts .post .wrapper {
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.342);
+  cursor: pointer;
+}
+
+.bottom-container .posts .post .wrapper .title {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.bottom-container .posts .post .wrapper .buttons {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.bottom-container .posts .post .wrapper .button {
+  margin-top: 1rem;
+  height: 50px;
+  width: 50px;
+  font-size: 1.5rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.bottom-container .posts .post .wrapper .button:hover {
+  scale: 1.1;
+  background-color: black;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.bottom-container .posts .post .post-image {
+  height: 100%;
+  width: 100%;
+}

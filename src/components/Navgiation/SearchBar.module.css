@@ -1,0 +1,129 @@
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: slide-up 1s ease;
+  position: relative;
+}
+
+.form .search-bar {
+  height: 3rem;
+  width: 30rem;
+  position: relative;
+  bottom: 25px;
+  right: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.form .search-bar .input-field {
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  padding-left: 1rem;
+  font-size: 1rem;
+  font-family: var(--default-font);
+}
+
+.form .search-bar .search-btn {
+  position: absolute;
+  top: 4.5px;
+  right: -11px;
+  padding: 0.7rem;
+  font-size: 1rem;
+  background-color: var(--primary-color);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  color: white;
+}
+
+.form .search-bar .search-btn:hover {
+  background-color: grey;
+  transition: all 0.4s ease-in-out;
+}
+
+@keyframes slide-up {
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+}
+
+.search-list {
+  background-color: white;
+  width: 100%;
+  height: 180px;
+  overflow-y: scroll;
+  position: absolute;
+  bottom: -200px;
+  border-radius: 20px;
+  list-style: none;
+  padding: 0.5rem;
+  animation: slide-down 0.5s ease-in-out;
+}
+
+.search-list .error {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: grey;
+}
+
+.search-list .list-item {
+  box-shadow: var(--list-item-shadow);
+  padding: 0.3rem;
+  cursor: pointer;
+}
+
+.search-list .list-item:last-child {
+  box-shadow: none;
+}
+
+.search-list .list-item .select {
+  width: 100%;
+  height: 100%;
+  text-align: start;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-family: var(--default-font);
+  padding: 0.4rem;
+  color: grey;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.search-list .list-item .select:hover {
+  color: black;
+}
+
+.search-list .list-item:hover {
+  background-color: rgba(226, 225, 225, 0.45);
+  color: black;
+}
+
+@keyframes slide-down {
+  0% {
+    bottom: -190px;
+    opacity: 0;
+  }
+
+  100% {
+    bottom: -200px;
+    opacity: 1;
+  }
+}

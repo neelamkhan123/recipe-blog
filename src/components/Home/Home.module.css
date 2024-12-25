@@ -1,0 +1,44 @@
+.home-container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../../images/showcase.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100;
+}
+
+.title {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 3.8rem;
+  animation: slide-up 1s ease;
+}
+
+@keyframes slide-up {
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+}
+
+.home {
+  position: absolute;
+  left: 34%;
+  top: 60%;
+  animation: slide-up 1s ease;
+}

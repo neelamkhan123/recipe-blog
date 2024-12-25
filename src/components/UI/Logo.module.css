@@ -1,0 +1,14 @@
+.logo {
+  height: 50px;
+  width: 50px;
+  color: var(--secondary-color);
+  background-color: white;
+  border-radius: 50%;
+  border: none;
+  font-size: 2rem;
+  padding: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
