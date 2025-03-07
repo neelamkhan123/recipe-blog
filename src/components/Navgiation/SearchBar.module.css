@@ -64,7 +64,7 @@
 
 .search-list {
   background-color: white;
-  width: 100%;
+  width: 480px;
   height: 180px;
   overflow-y: scroll;
   position: absolute;
