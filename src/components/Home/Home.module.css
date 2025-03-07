@@ -3,18 +3,14 @@
   width: 100vw;
   background-image: url("../../images/showcase.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   position: relative;
-}
-
-.wrapper {
-  height: 100vh;
-  width: 100;
 }
 
 .title {
@@ -22,6 +18,10 @@
   font-family: "Raleway", sans-serif;
   font-size: 3.8rem;
   animation: slide-up 1s ease;
+}
+
+.home {
+  width: 300px;
 }
 
 @keyframes slide-up {
@@ -34,12 +34,4 @@
     transform: translateY(50px);
     opacity: 0;
   }
-}
-
-.home {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 60%;
-  animation: slide-up 1s ease;
 }

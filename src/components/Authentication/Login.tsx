@@ -41,15 +41,17 @@ const Login = (): JSX.Element => {
 
   return (
     <main className={styles.authentication}>
-      <button
-        onClick={navigateSignUp}
-        className={`${styles["signup-header-button"]} ${styles.header}`}
-      >
-        Sign Up
-      </button>
-      <button className={`${styles["login-header-button"]} ${styles.header}`}>
-        Login
-      </button>
+      <div className={styles.wrapper}>
+        <button
+          onClick={navigateSignUp}
+          className={`${styles["signup-header-button"]} ${styles.header}`}
+        >
+          Sign Up
+        </button>
+        <button className={`${styles["login-header-button"]} ${styles.header}`}>
+          Login
+        </button>
+      </div>
       <div className={styles["auth-container"]}>
         <form onSubmit={signIn} className={styles.form}>
           <h1 className={styles.heading}>Welcome back!</h1>
