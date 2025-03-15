@@ -30,14 +30,14 @@
 }
 
 .authentication .wrapper .signup-header-button {
-  background-color: var(--secondary-color);
-  color: white;
+  background-color: white;
   position: relative;
   top: 2px;
 }
 
 .authentication .wrapper .login-header-button {
-  background-color: white;
+  background-color: var(--secondary-color);
+  color: white;
   position: relative;
   top: 2px;
 }
